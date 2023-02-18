@@ -1,0 +1,12 @@
+imgpath: './samples/pre_place.tif'
+SideLength: 51
+crop_size: 512
+model: 'spm_model.unetplusplus()'
+model_from_zhuguoqing: 'unet.unet(chanels, classnum)'
+chanels: 6
+classnum: 2
+weight_path: './save_weights/BCE_epoch5.pth'
+save_path: './predict_result/3/pre_place_result5.tif'
+encoder: 'resnet50'
+activate: 'sigmoid'
+

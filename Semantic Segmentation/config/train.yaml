@@ -1,0 +1,29 @@
+classnum: 2
+channels: 6
+size : 512
+epochs: 100
+batchsize: 4
+workers: 8
+encoder: 'resnet50'
+train_mean: [0.05931596, 0.08246299, 0.05615314, 0.14458662, 0.23889109, 0.18515253]
+train_std: [0.04646912, 0.04497007, 0.05155156, 0.04443444, 0.07693502, 0.05987024]
+val_mean: [0.05984138, 0.0829549, 0.05666915, 0.14468256, 0.23751335, 0.18391832]
+val_std: [0.04743388, 0.04506851, 0.05156813, 0.04417103, 0.07719735, 0.06009869]
+optimizier: 'adam'
+loss: 'two_classification'
+activate: 'sigmoid'
+model: 'spm_model.unetplusplus()'
+weights_save_path: './save_weights/BCE_epoch'
+train_img_path: 'E:/RS/dataset/image/train1/*'
+train_lab_path: 'E:/RS/dataset/label/train1/*'
+val_img_path: 'E:/RS/dataset/image/val1/*'
+val_lab_path: 'E:/RS/dataset/label/val1/*'
+train_lab_folder: 'E:/RS/dataset/label/train1'
+val_lab_folder: 'E:/RS/dataset/label/val1'
+ndvi: False
+exg: True
+vdvi: False
+rvi: True
+ndgi: True
+ngbdi: False
+ndcsi: False

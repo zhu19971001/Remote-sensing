@@ -1,0 +1,10 @@
+test_folder: "E:/remotess/dataset/image/test"
+mean: [0.060035, 0.08266733, 0.05630549, 0.14441935, 0.23829084, 0.18461607]
+std: [0.05289689, 0.04712894, 0.05215622, 0.04428755, 0.0765893, 0.0597233]
+model: 'smp.UnetPlusPlus(encoder_name=encoder, in_channels=chanels, classes=classnum)'
+model_from_zhuguoqing: 'unet.unet(chanels, classnum)'
+weight_path: "E:/remotess/save_weights/_BCE_bestMIou.pth"
+chanels: 6
+classnum: 2
+save_test_folder: "E:/remotess/dataset/image/test_result"
+encoder: 'resnet34'
